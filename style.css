@@ -27,8 +27,6 @@ a {
     color: inherit;
 }
 
-/* ===== header ===== */
-
 .kepala {
     padding: 18px 32px;
     background-color: var(--sea-deep);
@@ -77,8 +75,6 @@ a {
     border-color: var(--amber);
     color: var(--amber);
 }
-
-/* ===== slider / hero ===== */
 
 .slider-container {
     position: relative;
@@ -187,8 +183,6 @@ a {
     transform: scale(1.3);
 }
 
-/* ===== biodata / code window ===== */
-
 .about {
     padding: 72px 8vw 40px;
     max-width: 900px;
@@ -260,8 +254,6 @@ a {
 .str { color: #9FD8B1; }
 .pn { color: rgba(245, 247, 245, 0.55); }
 
-/* ===== galeri ===== */
-
 .galeri {
     padding: 24px 8vw 80px;
     max-width: 1100px;
@@ -301,8 +293,6 @@ a {
     border-top: 3px solid var(--amber);
 }
 
-/* ===== footer ===== */
-
 .cp {
     padding: 18px;
     background-color: var(--sea-deep);
@@ -314,8 +304,6 @@ a {
 
 .cp .prompt { color: var(--amber); }
 .cp .dim { color: rgba(245, 247, 245, 0.55); }
-
-/* ===== accessibility ===== */
 
 a:focus-visible,
 button:focus-visible,
@@ -333,8 +321,6 @@ button:focus-visible,
         transition: none !important;
     }
 }
-
-/* ===== responsive ===== */
 
 @media (max-width: 860px) {
     .galeri-grid {

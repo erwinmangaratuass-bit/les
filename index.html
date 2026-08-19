@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Perdana</title>
+    <title>Erwin Mangaratua Situmeang — Perkenalan Diri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,15 +16,13 @@
     <header class="kepala">
         <div class="pilihKepala">
             <div class="nama">
-                <h1>Erwin mangaratua situmeang</h1>
+                <span class="prompt">~$</span> Erwin Mangaratua Situmeang
             </div>
             <nav class="navigasi">
                 <ul class="navigasii">
-                    <li class="pilihHome"><a href="index.html">Home</a></li>
-                    <li class="pilihAbout"><a href="about.html">About</a></li>
-                    <li class="pilihSkil"><a href="skil.html">Skil</a></li>
-                    <li class="pilihContact"><a href="contact.html">Contact</a></li>
-                    <li class="pilihProject"><a href="project.html">project</a></li>
+                    <li class="pilihHome"><a href="#home">Home</a></li>
+                    <li class="pilihAbout"><a href="#biodata">Biodata</a></li>
+                    <li class="pilihGaleri"><a href="#galeri">Galeri</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,125 +30,88 @@
 
     <main class="main">
 
-        <div class="slider-container">
-
+        <section class="slider-container" id="home">
 
             <div class="slides" id="slide-wrapper">
-
-
                 <div class="slide">
-                    <img src="image/slider1.jpg" alt="Slide 1">
+                    <img src="image/foto1.jpeg" alt="Erwin di depan gedung Fakultas Teknik dan Kejuruan">
                 </div>
                 <div class="slide">
-                    <img src="image/slider2.jpg" alt="Slide 2">
+                    <img src="image/foto2.jpeg" alt="Erwin di depan tugu Fakultas Teknik dan Kejuruan">
                 </div>
-
+                <div class="slide">
+                    <img src="image/foto3.jpeg" alt="Erwin bersama kelompok saat kegiatan kampus">
+                </div>
             </div>
 
+            <div class="hero-overlay">
+                <p class="eyebrow">// perkenalan diri</p>
+                <h1>Hai semua, selamat datang<br>di web perkenalan diri saya</h1>
+            </div>
 
-            <button class="prev" onclick="changeSlide(-1)">❮</button>
-            <button class="next" onclick="changeSlide(1)">❯</button>
-
+            <button class="prev" onclick="changeSlide(-1)" aria-label="Slide sebelumnya">❮</button>
+            <button class="next" onclick="changeSlide(1)" aria-label="Slide berikutnya">❯</button>
 
             <div class="dots-container">
                 <span class="dot active" onclick="currentSlide(0)"></span>
                 <span class="dot" onclick="currentSlide(1)"></span>
-            </div>
-
-        </div>
-
-        <div class="about">
-            <h2>About us</h2>
-        </div>
-
-
-        <section class="project">
-
-            <div class="project1">
-                <img src="image/slider3.jpg" alt="poto" class="image2">
-            </div>
-
-            <div class="project2">
-                <h1>My Journey</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eligendi, incidunt neque
-                    distinctio possimus eaque in! Quae, aut accusamus, nemo nisi et autem dolor obcaecati laudantium
-                    neque, repellat quisquam suscipit! Maxime delectus unde nisi eligendi cum doloremque, accusamus
-                    veniam est, quos, ullam repellat necessitatibus soluta qui porro! Quidem, accusantium nulla.</p>
-                <button>Learn More</button>
+                <span class="dot" onclick="currentSlide(2)"></span>
             </div>
 
         </section>
 
+        <section class="about" id="biodata">
+            <p class="eyebrow">// data diri</p>
+            <h2>Biodata</h2>
 
-        <section class="project">
-
-            <div class="project2">
-                <h1>My Journey</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eligendi, incidunt neque
-                    distinctio possimus eaque in! Quae, aut accusamus, nemo nisi et autem dolor obcaecati laudantium
-                    neque, repellat quisquam suscipit! Maxime delectus unde nisi eligendi cum doloremque, accusamus
-                    veniam est, quos, ullam repellat necessitatibus soluta qui porro! Quidem, accusantium nulla.</p>
-                <button>Learn More</button>
+            <div class="code-window">
+                <div class="code-titlebar">
+                    <span class="dotbtn red"></span>
+                    <span class="dotbtn yellow"></span>
+                    <span class="dotbtn green"></span>
+                    <span class="filename">biodata.js</span>
+                </div>
+                <div class="code-body">
+                    <p class="code-line"><span class="kw">const</span> <span class="var">mahasiswa</span> <span class="pn">= {</span></p>
+                    <p class="code-line indent"><span class="key">nama</span><span class="pn">:</span> <span class="str">"Erwin Mangaratua Situmeang"</span><span class="pn">,</span></p>
+                    <p class="code-line indent"><span class="key">nim</span><span class="pn">:</span> <span class="str">"2655011026"</span><span class="pn">,</span></p>
+                    <p class="code-line indent"><span class="key">kelompok</span><span class="pn">: {</span> <span class="key">nomor</span><span class="pn">:</span> <span class="str">"034"</span><span class="pn">,</span> <span class="key">nama</span><span class="pn">:</span> <span class="str">"string"</span> <span class="pn">},</span></p>
+                    <p class="code-line indent"><span class="key">asal</span><span class="pn">:</span> <span class="str">"Kepulauan Riau, Kota Batam"</span><span class="pn">,</span></p>
+                    <p class="code-line indent"><span class="key">sekolah</span><span class="pn">:</span> <span class="str">"SMAN 16 Batam"</span><span class="pn">,</span></p>
+                    <p class="code-line indent"><span class="key">prodi</span><span class="pn">:</span> <span class="str">"D4 Teknologi Rekayasa Perangkat Lunak"</span><span class="pn">,</span></p>
+                    <p class="code-line indent"><span class="key">hobi</span><span class="pn">:</span> <span class="str">"Berenang"</span><span class="pn">,</span></p>
+                    <p class="code-line indent"><span class="key">alasanPilihJurusan</span><span class="pn">:</span> <span class="str">"Suka dan tertarik akan lapangan kerja ke depannya"</span><span class="pn">,</span></p>
+                    <p class="code-line indent"><span class="key">citaCita</span><span class="pn">:</span> <span class="str">"Udah nggak ada, jalani saja dulu :)"</span></p>
+                    <p class="code-line"><span class="pn">};</span></p>
+                </div>
             </div>
-
-            <div class="project1">
-                <img src="image/slider2.jpg" alt="poto" class="image2">
-            </div>
-
-
         </section>
 
-        <section class="boxx">
-            <div class="our-service">
-                <h2>Our service</h2>
+        <section class="galeri" id="galeri">
+            <p class="eyebrow">// dokumentasi</p>
+            <h2>Galeri</h2>
+
+            <div class="galeri-grid">
+                <figure class="galeri-item">
+                    <img src="image/foto1.jpeg" alt="Erwin mengenakan seragam putih di depan tugu Fakultas Teknik dan Kejuruan">
+                    <figcaption>Di depan tugu Fakultas Teknik dan Kejuruan</figcaption>
+                </figure>
+                <figure class="galeri-item">
+                    <img src="image/foto2.jpeg" alt="Erwin mengenakan kaos polo di depan gedung fakultas">
+                    <figcaption>Kunjungan ke Fakultas Teknik dan Kejuruan</figcaption>
+                </figure>
+                <figure class="galeri-item">
+                    <img src="image/foto3.jpeg" alt="Erwin berfoto bersama teman satu kelompok saat kegiatan kampus">
+                    <figcaption>Bersama kelompok saat kegiatan kampus</figcaption>
+                </figure>
             </div>
-
-            <section class="tree">
-                <div class="tree-item">
-                    <img src="image/hutan.jpg" alt="poto" class="tree-img">
-                    <div class="tree-text">
-                        <h1>title card</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem esse excepturi
-                            pariatur
-                            nemo quaerat nostrum ducimus obcaecati cum provident incidunt. Delectus cumque ipsa deleniti
-                            soluta!</p>
-                    </div>
-                </div>
-
-                <div class="tree-item">
-                    <img src="image/hutan.jpg" alt="poto" class="tree-img">
-                    <div class="tree-text">
-                        <h1>title card</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem esse excepturi
-                            pariatur
-                            nemo quaerat nostrum ducimus obcaecati cum provident incidunt. Delectus cumque ipsa deleniti
-                            soluta!</p>
-                    </div>
-                </div>
-
-                <div class="tree-item">
-                    <img src="image/hutan.jpg" alt="poto" class="tree-img">
-                    <div class="tree-text">
-                        <h1>title card</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem esse excepturi
-                            pariatur
-                            nemo quaerat nostrum ducimus obcaecati cum provident incidunt. Delectus cumque ipsa deleniti
-                            soluta!</p>
-                    </div>
-                </div>
-            </section>
-
-        <button>learn more</button>
-
         </section>
+
     </main>
 
-
     <footer class="cp">
-        &copy; Erwin Mangaratua.(pemula)
+        <span class="prompt">&gt;</span> &copy; 2026 Erwin Mangaratua Situmeang <span class="dim">(pemula)</span>
     </footer>
-
-
 
     <script src="java.js"></script>
 </body>

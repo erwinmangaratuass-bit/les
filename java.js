@@ -33,10 +33,6 @@ function currentSlide(n) {
   showSlide(n);
 }
 
-// changeSlide(1)  → maju ke depan
-// changeSlide(-1) → mundur ke belakang
-
-
 // Mulai timer otomatis dengan setInterval
 function startAutoSlide() {
   slideInterval = setInterval(function() {
